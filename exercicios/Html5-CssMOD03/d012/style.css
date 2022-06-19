@@ -55,6 +55,7 @@ header a,footer a{
 }
 a:hover{
   text-decoration: underline;
+  color: goldenrod;
   /* text-decoration: underline pra quando passar o mouse encima aparecer o sublinhado; */
 }
 section{
@@ -77,11 +78,28 @@ section.imagem{
   /* toda as sections da clase image vão obter essa configurações */
   background-color: rgba(150, 141, 141, 0.322) ;
   color: aliceblue;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.288);
+  background-attachment: fixed;
 }
 section.imagem > p{
-  background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgba(0, 0, 0, 0.568);
   display: inline-block;
  /* com display:inline-block o background-color:  se ajusta ate onde tem palavras muito util ! */
+ text-shadow:1px 1px 1px rgba(0, 0, 0, 0.315) ;
+}
+section>p{
+  padding-bottom: 1em;
+  /* espacamento entre os paragrafos */
+}
+section#img01{
+  background-image: url(imagens/ocean.jpg);
+  background-position: left center;
+  background-size: cover;
+}
+section#img02{
+ background-image: url(imagens/sea.jpg);
+ background-position: left center;
+ background-size: cover;
 }
 footer{
   background-color: black;
