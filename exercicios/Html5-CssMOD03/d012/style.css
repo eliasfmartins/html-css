@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html,body{
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+header{
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+}
+header>h1{
+  padding: 50px;
+  /* o espaço entre o titulo e o top da pag */
+  /* text-transform: uppercase; */
+  /* joga tudo em letra maiuscula */
+  font-variant: small-caps;
+  /* todas as letras ficam  maiusculas mas as primeira ficam maiores  */
+}
+header>p{
+  padding-bottom: 50px;
+  /* fica 50px pra cima e 50px pra baixo fica simetrico */
+}
+header a,footer a{
+  /* os  links afetados  por essa configuração seram apenas os localizados dentro do header  e do footer */
+  color: whitesmoke;
+  text-decoration: none;
+  /* text-decoration: none;foi usado para tirar o sublinhado do link */
+  font-weight: bold;
+  /* font-weight: bolder;foi usado pra deixar a fonte em negrito */
+}
+a:hover{
+  text-decoration: underline;
+  /* text-decoration: underline pra quando passar o mouse encima aparecer o sublinhado; */
+}
+section{
+  /* todas as sections receberam essas configurações primeiro , mas caso tenha instrução da  section abaixo a ultima prevalecera */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  /* vai ganhar 10% da padding encima e enbaixo de cada paragrafo */
+  line-height: 2em;
+  /* line-height:; e o espacamento entre as linhas ! */
+  padding-left: 30px;
+  /* afastar o texto da borda  */
+}
+section.normal {
+  /* todas sections da classe normal vão obter essa configuração */
+  background-color: white;
+  color: black;
+}
+section.imagem{
+  /* toda as sections da clase image vão obter essa configurações */
+  background-color: rgba(150, 141, 141, 0.322) ;
+  color: aliceblue;
+}
+section.imagem > p{
+  background-color: rgba(0, 0, 0, 0.068);
+  width: 400px;
+  /*  width a largura do preto fica apenas em 400px */
+}
+footer{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  padding: 12px;
+}
