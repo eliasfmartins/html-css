@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+/* img,h1{
+  display: inline-block; 
+  essa foi a primeira forma de alinha texto e imagem com dysplay inline-block*/
+.container{
+    display: flex;
+    align-items: center;
+}
+div{
+    background-color: black;
+}
+div img{
+  padding: 10px 10px 10px 10px;
+  padding: auto;
+}
+div h1{
+  color: white;
+  padding: 10px 10px 10px 10px;
+  
+}
+div.links{
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+}
+div.links a{
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid grey;
+  padding: 1px 5px;
+}
