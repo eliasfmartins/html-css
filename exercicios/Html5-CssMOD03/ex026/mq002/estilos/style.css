@@ -8,7 +8,9 @@
 html,body{
    width: 100vw; /* largura de 100vh largura da tela de 100% */
    height: 100vh;/*altura100vh tela toda*/
-   background-color: black;
+   background-color:rgb(3, 3, 221);
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 h1{
   color: aliceblue;
